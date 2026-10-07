@@ -9,7 +9,7 @@ public class CalculadoraBasica {
     }
 
     public Double dividir(Double a, Double b){
-        if (b == 0 || b == null){
+        if (a == null || b == null || b == 0){
             // Lanzar una excepcion
             throw new IllegalArgumentException("No se puede dividir por cero");
         }
